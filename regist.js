@@ -8,8 +8,8 @@ document
     // Ambil data dari form
     const formData = new FormData(this);
     const data = {
-      Nama: formData.get("nama"),
-      No_HP: formData.get("no_hp"),
+      Name: formData.get("nama"),
+      PhoneNumber: formData.get("no_hp"),
       Email: formData.get("email"),
       Password: formData.get("password"),
     };
