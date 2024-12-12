@@ -12,6 +12,7 @@ document
       No_HP: formData.get("no_hp"),
       Email: formData.get("email"),
       Password: formData.get("password"),
+      Role: "",
     };
 
     console.log("Form data:", data);
