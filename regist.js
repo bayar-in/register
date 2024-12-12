@@ -12,6 +12,7 @@ document
       No_HP: formData.get("no_hp"),
       Email: formData.get("email"),
       Password: formData.get("password"),
+      role:(""),
     };
 
     console.log("Form data:", data);
@@ -38,7 +39,7 @@ document
       }
 
       alert("Registration successful! Please log in.");
-      window.location.replace("../login/login.html");
+      window.location.replace("/login");
     } catch (error) {
       console.error("Error during registration:", error);
       alert("An error occurred. Please try again.");
