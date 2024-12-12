@@ -33,12 +33,24 @@ document
       console.log("Response data:", responseData);
 
       if (!response.ok) {
-        alert(responseData.message || "Registration failed.");
-        return;
+        Swal.fire({
+          title: "Registrasi Gagal",
+          text: responseData.message || "Periksa kembali data Anda.",
+          icon: "error",
+          button: "OK",
+        }).then(() => {
+          console.log(responseData); // untuk memeriksa error dari server
+        });
       }
 
-      alert("Registration successful! Please log in.");
-      window.location.replace("/login");
+      Swal.fire({
+        title: "Pendaftaran Berhasil",
+        text: "Anda akan diarahkan ke halaman login.",
+        icon: "success",
+        button: "OK",
+      }).then(() => {
+        window.location.replace("/login");
+      });
     } catch (error) {
       console.error("Error during registration:", error);
       alert("An error occurred. Please try again.");
