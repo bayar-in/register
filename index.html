@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="regist.css" />
+    <link
+      rel="icon"
+      href="../../../assets/img/logodugeon.png"
+      type="image/x-icon"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B66QPE5BY6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B66QPE5BY6');
+    </script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="image-section">
+        <div class="image-wrapper">
+          <img src="/assets/img/gradient.png" alt="" />
+        </div>
+
+        <div class="content-container">
+          <h1 class="section-heading">
+            1 Aplikasi Untuk Segala Informasi Pembayaran <span>Kamu~ </span>
+          </h1>
+        
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-wrapper">
+          <div class="logo-container"></div>
+
+          <h2>Daftar Akun Baru 👋🏻</h2>
+          <p>Isi form di bawah ini untuk mendaftar.</p>
+
+          <form class="signup-form">
+            <div class="input-container">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Nomor HP</label>
+                <input
+                  type="text"
+                  id="no_hp"
+                  name="no_hp"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+            </div>
+
+            <button type="submit" class="signup-btn">Daftar</button>
+          </form>
+
+          <div class="or-divider">atau</div>
+
+          <button class="google-signin">
+            <a href="./../logwhatsauth/logwauth.html"><span>Login Dengan WhatsAuth</span></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./regist.js"></script>
+  </body>
+</html>
